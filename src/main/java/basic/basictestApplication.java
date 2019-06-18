@@ -4,26 +4,25 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
-public class basictestApplication extends Application<basictestConfiguration> {
+public class BasictestApplication extends Application<BasictestConfiguration> {
 
-    public static void main(final String[] args) throws Exception {
-        new basictestApplication().run(args);
-    }
+	public static void main(final String[] args) throws Exception {
+		new BasictestApplication().run(args);
+	}
 
-    @Override
-    public String getName() {
-        return "basictest";
-    }
+	@Override
+	public String getName() {
+		return "basictest";
+	}
 
-    @Override
-    public void initialize(final Bootstrap<basictestConfiguration> bootstrap) {
-        // TODO: application initialization
-    }
+	@Override
+	public void initialize(final Bootstrap<BasictestConfiguration> bootstrap) {
+		// TODO: application initialization
+	}
 
-    @Override
-    public void run(final basictestConfiguration configuration,
-                    final Environment environment) {
-        // TODO: implement application
-    }
+	@Override
+	public void run(final BasictestConfiguration configuration, final Environment environment) {
+		// TODO: implement application
+	}
 
 }
