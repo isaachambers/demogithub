@@ -9,8 +9,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import basic.BasictestApplication;
-import basic.BasictestConfiguration;
+import basic.BasicTestApplication;
+import basic.BasicTestConfiguration;
 import basic.domain.Person;
 import io.dropwizard.testing.DropwizardTestSupport;
 import io.dropwizard.testing.ResourceHelpers;
@@ -19,8 +19,8 @@ import junit.framework.TestCase;
 public class AppTest extends TestCase {
 
 	private Client client;
-	public static final DropwizardTestSupport<BasictestConfiguration> SUPPORT = new DropwizardTestSupport<BasictestConfiguration>(
-			BasictestApplication.class, ResourceHelpers.resourceFilePath("config.yaml"));
+	public static final DropwizardTestSupport<BasicTestConfiguration> SUPPORT = new DropwizardTestSupport<BasicTestConfiguration>(
+			BasicTestApplication.class, ResourceHelpers.resourceFilePath("config.yaml"));
 //			,
 //			ConfigOverride.config("server.applicationConnectors[0].port", "0") // Optional, if not using a separate
 	// testing-specific configuration file,
