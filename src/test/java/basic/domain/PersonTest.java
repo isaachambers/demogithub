@@ -22,11 +22,11 @@ public class PersonTest {
 		assert MAPPER.writeValueAsString(person).equals(expected);
 	}
 
-//	@Test
-//	public void deserializesFromJSON() throws Exception {
-//		final Person person = new Person("Luther Blissett", "lb@example.com");
+	@Test
+	public void deserializesFromJSON() throws Exception {
+		final Person person = new Person("Luther Blissett", "lb@example.com");
 //		assertThat((Person) MAPPER.readValue(fixture("fixtures/person.json"), Person.class)).isEqualTo(person);
 //		assertThat((Person) MAPPER.readValue(fixture("fixtures/person.json"), Person.class))
 //				.isEqualToComparingFieldByField(person);
-//	}
+	}
 }
