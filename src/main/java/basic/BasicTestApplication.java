@@ -4,10 +4,10 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
-public class BasictestApplication extends Application<BasictestConfiguration> {
+public class BasicTestApplication extends Application<BasicTestConfiguration> {
 
 	public static void main(final String[] args) throws Exception {
-		new BasictestApplication().run(args);
+		new BasicTestApplication().run(args);
 	}
 
 	@Override
@@ -16,12 +16,12 @@ public class BasictestApplication extends Application<BasictestConfiguration> {
 	}
 
 	@Override
-	public void initialize(final Bootstrap<BasictestConfiguration> bootstrap) {
+	public void initialize(final Bootstrap<BasicTestConfiguration> bootstrap) {
 		// TODO: application initialization
 	}
 
 	@Override
-	public void run(final BasictestConfiguration configuration, final Environment environment) {
+	public void run(final BasicTestConfiguration configuration, final Environment environment) {
 		// TODO: implement application
 	}
 
