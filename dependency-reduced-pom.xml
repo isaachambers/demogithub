@@ -84,12 +84,14 @@
             </configuration>
           </execution>
         </executions>
+        <configuration>
+          <source>8</source>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.1</version>
         <configuration>
-          <source>8</source>
           <useSystemClassLoader>false</useSystemClassLoader>
         </configuration>
       </plugin>
